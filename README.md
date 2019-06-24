@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sample Snack app
 
 Welcome to Expo!
@@ -11,3 +12,6 @@ Projects created in Snack are publicly available, so you can easily share the li
 If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io).
 
 Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack-web).
+=======
+# react-native_galary
+>>>>>>> 8204f00788ee4e2569d59258bb3d583abf7a5935

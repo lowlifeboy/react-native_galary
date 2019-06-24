@@ -1,5 +1,6 @@
 {
   "expo": {
+<<<<<<< HEAD
     "name": "React Native Galary",
     "description": "No description",
     "slug": "snack-HJIDH2CJH",
@@ -21,8 +22,37 @@
         "xml"
       ]
     },
+=======
+    "name": "Galary",
+    "slug": "galary",
+    "privacy": "public",
+    "sdkVersion": "33.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+>>>>>>> 8204f00788ee4e2569d59258bb3d583abf7a5935
     "ios": {
       "supportsTablet": true
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8204f00788ee4e2569d59258bb3d583abf7a5935

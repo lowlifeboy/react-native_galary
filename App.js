@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, ScrollView, Button } from 'react-native'
+import { View, ScrollView, Button } from 'react-native'
 import { createStackNavigator, createAppContainer } from "react-navigation"
 import { Header, ImageCard, Layout, Details } from './components/common'
 
@@ -50,6 +50,7 @@ export class DetailsScreen extends React.Component {
 
   render() {
     const { headerTitle } = this.state
+    
     return (
       <View>
         <Header title={headerTitle} />
