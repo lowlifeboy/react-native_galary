@@ -1,17 +1,17 @@
 // Import
-import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import Constants from 'expo-constants'
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
 
 // Body
 const Header = ({ title }) => {
-  const { headerContainer, headerText } = styles
+  const { headerContainer, headerText } = styles;
   return (
     <View style={headerContainer}>
       <Text style={headerText}>{title}</Text>
     </View>
-  )
-}
+  );
+};
 
 // Styles
 const styles = StyleSheet.create({
@@ -21,10 +21,10 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
     backgroundColor: '#4bcffc',
     shadowColor: '#000',
-    shadowOffset: {width: 0, height: 2},
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.4,
     elevation: 8,
-    position: 'relative'
+    position: 'relative',
   },
   headerText: {
     margin: 24,
@@ -36,8 +36,4 @@ const styles = StyleSheet.create({
 });
 
 // Export
-<<<<<<< HEAD
-export {Header}
-=======
-export { Header }
->>>>>>> 8204f00788ee4e2569d59258bb3d583abf7a5935
+export { Header };
