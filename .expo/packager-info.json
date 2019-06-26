@@ -2,8 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 3404,
+  "packagerPid": 11001,
   "expoServerNgrokUrl": "https://2h-nh7.anonymous.crabby.exp.direct",
   "packagerNgrokUrl": "https://packager.2h-nh7.anonymous.crabby.exp.direct",
-  "ngrokPid": 3429
+  "ngrokPid": 11034,
+  "webpackServerPort": null
 }
