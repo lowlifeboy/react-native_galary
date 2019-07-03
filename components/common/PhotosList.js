@@ -51,7 +51,9 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
+const PhotosListConnection = connect(
   mapStateToProps,
   mapDispatchToProps
 )(PhotosList);
+
+export { PhotosListConnection }
