@@ -7,7 +7,7 @@ import PhotosList from './components/common';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 
-const store = configureStore();
+const store = configureStore({});
 
 class HomeScreen extends React.Component {
   state = {
@@ -55,7 +55,7 @@ class HomeScreen extends React.Component {
   }
 }
 
-export class DetailsScreen extends React.Component {
+class DetailsScreen extends React.Component {
   state = {
     headerTitle: 'Details Page',
   };
