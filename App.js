@@ -1,7 +1,9 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import { Header, Layout, Details, PhotosList } from './components/common';
+import { Header, Layout, Details } from './components/common';
+
+import PhotosList from './components/common/PhotosList';
 
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';

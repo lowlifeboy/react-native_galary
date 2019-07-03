@@ -18,22 +18,20 @@ class PhotosList extends React.Component {
     // const { navigation } = this.props;
 
     if (this.props.hasErrored) {
-      return (<Text>Sorry! There was an error loading the items</Text>);
+      return <Text>Sorry! There was an error loading the items</Text>;
     }
 
     if (this.props.isLoading) {
-      return (<Text>Loading...</Text>);
+      return <Text>Loading...</Text>;
     }
 
-    return (
-      this.props.photos.map(item => (
-        <ImageCard
-          key={item.id}
-          title={item}
-          // onPress={() => navigation.navigate('Details', item)}
-        />
-      ))
-    )
+    return this.props.photos.map(item => (
+      <ImageCard
+        key={item.id}
+        title={item}
+        // onPress={() => navigation.navigate('Details', item)}
+      />
+    ));
   }
 }
 
@@ -56,4 +54,4 @@ const PhotosListConnection = connect(
   mapDispatchToProps
 )(PhotosList);
 
-export { PhotosListConnection }
+export default PhotosListConnection;
