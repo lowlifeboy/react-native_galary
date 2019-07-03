@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { ImageCard } from './components/common';
+import { ImageCard } from './';
 // import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import { connect } from 'react-redux';
