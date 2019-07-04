@@ -15,7 +15,8 @@ class PhotosList extends React.Component {
   }
 
   render() {
-    // const { navigation } = this.props;
+    const { navigation } = this.props;
+    console.log(typeof navigation)
 
     if (this.props.hasErrored) {
       return <Text>Sorry! There was an error loading the items</Text>;
@@ -29,7 +30,7 @@ class PhotosList extends React.Component {
       <ImageCard
         key={item.id}
         title={item}
-        // onPress={() => navigation.navigate('Details', item)}
+        onPress={() => navigation.navigate('Details', item)}
       />
     ));
   }

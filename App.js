@@ -13,37 +13,20 @@ const store = configureStore({});
 class HomeScreen extends React.Component {
   state = {
     headerTitle: 'Photos Galary',
-    // photos: [],
   };
 
   render() {
     const { headerTitle } = this.state;
-
-    // if (this.state.hasErrored) {
-    //   return (
-    //     <View>
-    //       <Header title={headerTitle} />
-    //       <Text>Sorry! There was an error loading the items</Text>
-    //     </View>
-    //   );
-    // }
-
-    // if (this.state.isLoading) {
-    //   return (
-    //     <View>
-    //       <Header title={headerTitle} />
-    //       <Text>Loading...</Text>
-    //     </View>
-    //   );
-    // }
-
-    // const { photos } = this.state;
-    // const { navigation } = this.props;
+    const { navigation } = this.props;
 
     return (
       <View>
-        <Header title={headerTitle} />
-        {/* searchIcon="search" onPress={() => navigation.navigate('Search')} */}
+        <Header
+          title={headerTitle}
+          searchIcon="search"
+          onPress={() => navigation.navigate('Search')}
+        />
+        {/*  */}
         <ScrollView>
           <Layout>
             <Provider store={store}>
@@ -83,7 +66,6 @@ const AppNavigator = createStackNavigator(
   {
     Home: HomeScreen,
     Details: DetailsScreen,
-    // Search: SearchScreen,
   },
   {
     initialRouteName: 'Home',

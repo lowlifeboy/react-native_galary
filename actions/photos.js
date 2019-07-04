@@ -12,10 +12,10 @@ export function photosIsLoading(bool) {
   };
 }
 
-export function photosFetchDataSuccess(items) {
+export function photosFetchDataSuccess(photos) {
   return {
     type: 'PHOTOS_FETCH_DATA_SUCCESS',
-    items,
+    photos,
   };
 }
 
