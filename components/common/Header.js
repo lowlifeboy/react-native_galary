@@ -1,4 +1,3 @@
-// Import
 import React from 'react';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 import Constants from 'expo-constants';
@@ -6,7 +5,6 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-// Body
 const Header = ({ title, searchIcon, goBackIcon, onPress, onPressBack, onPressSearch }) => {
   const {
     headerContainer,
@@ -42,7 +40,6 @@ const Header = ({ title, searchIcon, goBackIcon, onPress, onPressBack, onPressSe
   );
 };
 
-// Styles
 const styles = StyleSheet.create({
   headerContainer: {
     height: 80,
@@ -88,5 +85,4 @@ const styles = StyleSheet.create({
   },
 });
 
-// Export
 export { Header };

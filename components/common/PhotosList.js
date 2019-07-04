@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { ImageCard } from './';
-// import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import { connect } from 'react-redux';
 import { photosFetchData } from '../../actions/photos';
@@ -16,7 +15,6 @@ class PhotosList extends React.Component {
 
   render() {
     const { navigation } = this.props;
-    console.log(typeof navigation)
 
     if (this.props.hasErrored) {
       return <Text>Sorry! There was an error loading the items</Text>;

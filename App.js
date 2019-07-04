@@ -20,21 +20,16 @@ class HomeScreen extends React.Component {
     const { navigation } = this.props;
 
     return (
-      <View>
-        <Header
-          title={headerTitle}
-          searchIcon="search"
-          onPress={() => navigation.navigate('Search')}
-        />
-        {/*  */}
-        <ScrollView>
-          <Layout>
-            <Provider store={store}>
-              <PhotosList />
-            </Provider>
-          </Layout>
-        </ScrollView>
-      </View>
+      <Provider store={store}>
+        <View>
+          <Header title={headerTitle} onPress={() => navigation.navigate('Search')} />
+          <ScrollView>
+            <Layout>
+              <PhotosList navigation={navigation} />
+            </Layout>
+          </ScrollView>
+        </View>
+      </Provider>
     );
   }
 }
